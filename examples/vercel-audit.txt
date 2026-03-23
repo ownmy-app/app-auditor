@@ -1,0 +1,7 @@
+
+URL: https://vercel.com/
+Title: Vercel: Build and deploy the best web experiences with the AI Cloud
+Stack: nextjs, react, vercel
+
+Risks:
+  • Hosting on Vercel/Netlify: ensure env vars and serverless limits are documented.

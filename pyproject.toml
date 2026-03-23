@@ -21,8 +21,8 @@ dev = ["pytest>=8.0", "pytest-cov", "responses>=0.25.0"]
 [project.scripts]
 app-audit = "app_auditor.cli:main"
 
-[tool.hatch.build.targets.wheel.sources]
-"src" = "app_auditor"
+[tool.hatch.build.targets.wheel]
+packages = ["app_auditor"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

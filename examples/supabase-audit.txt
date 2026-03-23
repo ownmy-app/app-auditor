@@ -1,0 +1,8 @@
+
+URL: https://supabase.com/
+Title: Supabase | The Postgres Development Platform.
+Stack: nextjs, react, vue, supabase, vercel
+
+Risks:
+  • Supabase client: verify auth flow, RLS, and env key exposure in client.
+  • Hosting on Vercel/Netlify: ensure env vars and serverless limits are documented.

@@ -2,11 +2,24 @@
 
 > Detect tech stack and surface production-readiness issues from any live URL or GitHub repo. One command, zero config.
 
+---
+
+## Quick start
+
 ```bash
-pip install app-auditor
-# or without installing:
-pipx run app-auditor url https://myapp.com
-pipx run app-auditor repo github.com/myorg/myrepo
+# Clone and install
+git clone https://github.com/ownmy-app/app-auditor
+cd app-auditor
+pip install -e .
+
+# Audit a live URL
+app-audit url https://vercel.com
+
+# Audit a GitHub repo
+app-audit repo myorg/myrepo
+
+# JSON output
+app-audit url https://myapp.com --format json
 ```
 
 ---
@@ -104,3 +117,30 @@ print(result["suggestions"])     # ["Next.js: check output mode..."]
 - Free tier: CLI and library (open source)
 - Paid: API with bulk auditing, team dashboards, Slack notifications
 - Inbound funnel: developers debugging production issues → upgrade path to managed services
+
+---
+
+## Example output
+
+### `app-audit url https://vercel.com`
+
+```
+URL: https://vercel.com/
+Title: Vercel: Build and deploy the best web experiences with the AI Cloud
+Stack: nextjs, react, vercel
+
+Risks:
+  • Hosting on Vercel/Netlify: ensure env vars and serverless limits are documented.
+```
+
+### `app-audit url https://supabase.com`
+
+```
+URL: https://supabase.com/
+Title: Supabase | The Postgres Development Platform.
+Stack: nextjs, react, vue, supabase, vercel
+
+Risks:
+  • Supabase client: verify auth flow, RLS, and env key exposure in client.
+  • Hosting on Vercel/Netlify: ensure env vars and serverless limits are documented.
+```

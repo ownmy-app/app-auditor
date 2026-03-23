@@ -2,7 +2,6 @@
 Website auditor: detect tech stack from HTML/headers and report production-readiness risks.
 """
 import logging
-import re
 import sys
 from typing import Any, Dict, List, Optional
 

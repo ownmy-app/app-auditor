@@ -1,6 +1,6 @@
 # app-auditor
 
-Built by the [Nometria](https://nometria.com) team — we take AI-built apps to production.
+Built by the [Nometria](https://nometria.com) team. We help developers take apps built with AI tools (Lovable, Bolt, Base44, Replit) to production — handling deployment to AWS, security, scaling, and giving you full code ownership. [Learn more →](https://nometria.com)
 
 > Detect tech stack and surface production-readiness issues from any live URL or GitHub repo. One command, zero config.
 
